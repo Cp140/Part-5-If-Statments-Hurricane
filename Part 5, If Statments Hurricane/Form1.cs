@@ -19,4 +19,9 @@ namespace Part_5__If_Statments_Hurricane
 
         }
     }
-}
+
+        private void txtWindSpeed_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }

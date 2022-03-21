@@ -55,6 +55,7 @@
             this.txtWindSpeed.Name = "txtWindSpeed";
             this.txtWindSpeed.Size = new System.Drawing.Size(100, 20);
             this.txtWindSpeed.TabIndex = 1;
+            this.txtWindSpeed.TextChanged += new System.EventHandler(this.txtWindSpeed_TextChanged);
             // 
             // lblWindSpeedMPH
             // 
