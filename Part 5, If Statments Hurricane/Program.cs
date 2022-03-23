@@ -16,7 +16,7 @@ namespace Part_5__If_Statments_Hurricane
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new mainForm());
         }
     }
 }

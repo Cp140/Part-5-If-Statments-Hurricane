@@ -1,6 +1,6 @@
 ﻿namespace Part_5__If_Statments_Hurricane
 {
-    partial class Form1
+    partial class mainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,14 +29,15 @@
         private void InitializeComponent()
         {
             this.lblTitle = new System.Windows.Forms.Label();
-            this.txtWindSpeed = new System.Windows.Forms.TextBox();
+            this.txtCat = new System.Windows.Forms.TextBox();
             this.lblWindSpeedMPH = new System.Windows.Forms.Label();
             this.lblHuricaneCat = new System.Windows.Forms.Label();
-            this.lblHurricaneCatOutput = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblMPH = new System.Windows.Forms.Label();
+            this.lblKNOTS = new System.Windows.Forms.Label();
+            this.lblKPH = new System.Windows.Forms.Label();
             this.lblWindSpeedKNOTS = new System.Windows.Forms.Label();
             this.lblWindSpeedKPH = new System.Windows.Forms.Label();
+            this.btnSubmit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -49,19 +50,19 @@
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Hurricane Status";
             // 
-            // txtWindSpeed
+            // txtCat
             // 
-            this.txtWindSpeed.Location = new System.Drawing.Point(163, 34);
-            this.txtWindSpeed.Name = "txtWindSpeed";
-            this.txtWindSpeed.Size = new System.Drawing.Size(100, 20);
-            this.txtWindSpeed.TabIndex = 1;
-            this.txtWindSpeed.TextChanged += new System.EventHandler(this.txtWindSpeed_TextChanged);
+            this.txtCat.Location = new System.Drawing.Point(163, 34);
+            this.txtCat.Name = "txtCat";
+            this.txtCat.Size = new System.Drawing.Size(100, 20);
+            this.txtCat.TabIndex = 1;
+            this.txtCat.TextChanged += new System.EventHandler(this.txtWindSpeed_TextChanged);
             // 
             // lblWindSpeedMPH
             // 
             this.lblWindSpeedMPH.AutoSize = true;
             this.lblWindSpeedMPH.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWindSpeedMPH.Location = new System.Drawing.Point(12, 33);
+            this.lblWindSpeedMPH.Location = new System.Drawing.Point(12, 116);
             this.lblWindSpeedMPH.Name = "lblWindSpeedMPH";
             this.lblWindSpeedMPH.Size = new System.Drawing.Size(124, 18);
             this.lblWindSpeedMPH.TabIndex = 2;
@@ -71,41 +72,41 @@
             // 
             this.lblHuricaneCat.AutoSize = true;
             this.lblHuricaneCat.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHuricaneCat.Location = new System.Drawing.Point(12, 116);
+            this.lblHuricaneCat.Location = new System.Drawing.Point(12, 36);
             this.lblHuricaneCat.Name = "lblHuricaneCat";
             this.lblHuricaneCat.Size = new System.Drawing.Size(131, 18);
             this.lblHuricaneCat.TabIndex = 3;
             this.lblHuricaneCat.Text = "Huricane Category";
             // 
-            // lblHurricaneCatOutput
+            // lblMPH
             // 
-            this.lblHurricaneCatOutput.AutoSize = true;
-            this.lblHurricaneCatOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHurricaneCatOutput.Location = new System.Drawing.Point(160, 116);
-            this.lblHurricaneCatOutput.Name = "lblHurricaneCatOutput";
-            this.lblHurricaneCatOutput.Size = new System.Drawing.Size(31, 18);
-            this.lblHurricaneCatOutput.TabIndex = 4;
-            this.lblHurricaneCatOutput.Text = "Cat";
+            this.lblMPH.AutoSize = true;
+            this.lblMPH.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMPH.Location = new System.Drawing.Point(160, 116);
+            this.lblMPH.Name = "lblMPH";
+            this.lblMPH.Size = new System.Drawing.Size(42, 18);
+            this.lblMPH.TabIndex = 4;
+            this.lblMPH.Text = "MPH";
             // 
-            // label2
+            // lblKNOTS
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(160, 87);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 18);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "KNOTS";
+            this.lblKNOTS.AutoSize = true;
+            this.lblKNOTS.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKNOTS.Location = new System.Drawing.Point(160, 87);
+            this.lblKNOTS.Name = "lblKNOTS";
+            this.lblKNOTS.Size = new System.Drawing.Size(60, 18);
+            this.lblKNOTS.TabIndex = 6;
+            this.lblKNOTS.Text = "KNOTS";
             // 
-            // label3
+            // lblKPH
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(160, 60);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(39, 18);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "KPH";
+            this.lblKPH.AutoSize = true;
+            this.lblKPH.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKPH.Location = new System.Drawing.Point(160, 60);
+            this.lblKPH.Name = "lblKPH";
+            this.lblKPH.Size = new System.Drawing.Size(39, 18);
+            this.lblKPH.TabIndex = 7;
+            this.lblKPH.Text = "KPH";
             // 
             // lblWindSpeedKNOTS
             // 
@@ -127,22 +128,34 @@
             this.lblWindSpeedKPH.TabIndex = 9;
             this.lblWindSpeedKPH.Text = "Wind speed KPH";
             // 
-            // Form1
+            // btnSubmit
+            // 
+            this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubmit.Location = new System.Drawing.Point(103, 137);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(131, 45);
+            this.btnSubmit.TabIndex = 10;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
+            // 
+            // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(356, 184);
+            this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.lblWindSpeedKPH);
             this.Controls.Add(this.lblWindSpeedKNOTS);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.lblHurricaneCatOutput);
+            this.Controls.Add(this.lblKPH);
+            this.Controls.Add(this.lblKNOTS);
+            this.Controls.Add(this.lblMPH);
             this.Controls.Add(this.lblHuricaneCat);
             this.Controls.Add(this.lblWindSpeedMPH);
-            this.Controls.Add(this.txtWindSpeed);
+            this.Controls.Add(this.txtCat);
             this.Controls.Add(this.lblTitle);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "mainForm";
+            this.Text = "Hurricane Status";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -151,14 +164,15 @@
         #endregion
 
         private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.TextBox txtWindSpeed;
+        private System.Windows.Forms.TextBox txtCat;
         private System.Windows.Forms.Label lblWindSpeedMPH;
         private System.Windows.Forms.Label lblHuricaneCat;
-        private System.Windows.Forms.Label lblHurricaneCatOutput;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblMPH;
+        private System.Windows.Forms.Label lblKNOTS;
+        private System.Windows.Forms.Label lblKPH;
         private System.Windows.Forms.Label lblWindSpeedKNOTS;
         private System.Windows.Forms.Label lblWindSpeedKPH;
+        private System.Windows.Forms.Button btnSubmit;
     }
 }
 
